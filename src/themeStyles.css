@@ -1,0 +1,32 @@
+/* src/themeStyles.css */
+
+/* Light Theme */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .navbar.light {
+    background-color: #f8f9fa;
+  }
+  
+  .theme-btn.light {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .navbar.dark {
+    background-color: #1e1e1e;
+  }
+  
+  .theme-btn.dark {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  

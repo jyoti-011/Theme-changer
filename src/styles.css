@@ -1,0 +1,159 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul li {
+    cursor: pointer;
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .hero-image {
+    flex: 1; /* Take 1 portion of the available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Ensure the image scales properly */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+  }
+  
+  
+  .hero {
+    flex: 2; /* Take 2 portions of the available space */
+    text-align: left;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Light Theme */
+  body.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .navbar.light {
+    background-color: #f0f0f0;
+    color: #000000;
+  }
+  
+  .theme-selector.light {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .navbar.dark {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .theme-selector.dark {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Solarized Theme */
+  body.solarized {
+    background-color: #002b36;
+    color: #839496;
+  }
+  
+  .navbar.solarized {
+    background-color: #073642;
+    color: #93a1a1;
+  }
+  
+  .theme-selector.solarized {
+    background-color: #93a1a1;
+    color: #002b36;
+  }
+  
+  /* Retro Theme */
+  body.retro {
+    background-color: #fdf6e3;
+    color: #657b83;
+  }
+  
+  .navbar.retro {
+    background-color: #eee8d5;
+    color: #657b83;
+  }
+  
+  .theme-selector.retro {
+    background-color: #657b83;
+    color: #fdf6e3;
+  }
+  
+  /* Dropdown styles */
+  .theme-toggle {
+    margin-top: 20px;
+  }
+  
+  .theme-selector {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column; /* Stack the content vertically */
+      text-align: center;
+    }
+  
+    .hero-image {
+      margin-bottom: 20px;
+    }
+  
+    .hero {
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  }
+  
